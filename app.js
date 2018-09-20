@@ -31,5 +31,6 @@ function getProfile(username) {
     }
   );
 }
-const users = ["mattcook3", "chalkers"];
+
+const users = process.argv.slice(2);
 users.forEach(getProfile);
